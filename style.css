@@ -1,0 +1,267 @@
+    .conteiner {
+        
+    background-image: url('fon1.jpg'); /* Укажите путь к изображению */
+    margin: auto;
+    width:1500px; /* Задайте высоту, если нужно */
+    background-size: cover; /* Изображение растягивается, чтобы покрыть весь блок */
+    background-repeat: no-repeat; /* Изображение не повторяется */
+    background-position: center; /* Центрирование изображения */
+    overflow: hidden; /* Убираем прокрутку */
+        
+}
+
+/* Фон на весь экран */
+body {
+
+    padding: 0;
+    box-sizing: border-box; /* Для удобства расчета размеров */
+    min-height: 100vh; /* Чтобы тело страницы всегда занимало всю высоту экрана */
+    background-size: cover; /* Изображение растягивается на весь экран */
+    background-repeat: no-repeat; /* Без повторения */
+    background-position: center; /* Центрирование изображения */
+    background-attachment: fixed; /* Фон фиксируется при прокрутке */
+    height: 90vh; /* Высота экрана */
+    margin: 0; /* Убираем отступы */
+    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+    color: white; /* Цвет текста по умолчанию */
+}
+
+a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: white; /* Цвет текста */
+    font-size: 16px; /* Размер шрифта */
+    display: flex; /* Выравниваем картинку и текст по горизонтали */
+    align-items: center; /* Вертикальное выравнивание */
+}
+
+.ul {
+    list-style-type: none; /* Убираем стандартные маркеры списка */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Располагаем элементы в строку */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: center; /* Центрируем элементы по вертикали */
+    background-color: rgba(0, 0, 0, 0.6); /* Прозрачный фон для панели */
+    padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+.li {
+    margin:0 400px;
+    margin-left: 10px;
+     /* Отступы между элементами */
+}
+.img {
+    margin: 0 auto;
+    display: block;
+    max-width: 15px;
+}
+
+.img1 {
+    max-width: 45px;
+}
+
+.img2
+{
+    max-width: 30px;
+}
+ .img3 {
+    max-width: 15px;
+}
+.li img {
+    margin-right: 10px; /* Отступ справа от картинки */
+}
+.li1{
+    margin: 0 40px;
+}
+a:hover {
+    color: #ff6347; /* Цвет текста при наведении */
+}
+
+/* Приветственный текст */
+.curved-text {
+width: 60%;
+height: 300px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Ссылка на заказ */
+.order-link {
+    display: block; /* Блоковый элемент */
+    margin: 30px auto; /* Центрирование */
+    font-size: 18px; /* Размер шрифта */
+    text-align: center; /* Центрирование текста */
+    color: #007bff; /* Синий цвет (Bootstrap) */
+    text-decoration: none; /* Убираем подчеркивание */
+    padding: 10px 20px; /* Увеличенные отступы */
+    border: 1px solid #007bff; /* Синяя рамка */
+    border-radius: 5px; /* Скругленные углы */
+    width: 200px; /* Фиксированная ширина */
+}
+
+.order-link:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+    background-color: #007bff; /* Заливка фоном при наведении */
+    color: #fff; /* Белый цвет текста при наведении */
+}
+.ul1{
+    list-style-type: none;
+}
+.podval{
+    font-size: 10px;
+    padding: 10px;
+    background: #888383;
+    display: flex;
+    justify-content:space-around;
+}
+
+.map-container {
+    width: 100%; 
+    text-align: center; 
+    margin-top: 20px;
+}
+iframe {
+    border: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень для красоты */
+    border-radius: 8px; /* Скругленные углы */
+}
+section {
+    padding: 50px;
+    text-align: center;
+}
+.kontakt{
+    color: #d3cb33;
+}
+
+@media (max-width: 1080px) {
+    .conteiner {
+        width: 100%; /* Уменьшаем ширину контейнера */
+        background-image: none;
+    }
+
+    .ul {
+        flex-direction: column; /* Меню в столбик */
+        padding: 10px 0;
+    }
+
+    .li {
+        margin: 10px 0;
+    }
+
+    .order-link {
+        width: 250px;
+    }
+}
+@media (max-width: 712px) {
+    .conteiner {
+        width: 100%;
+        padding: 15px;
+        background-image: url('fon1.jpg'); /* Укажите путь к изображению */
+    }
+    .curved-text svg {
+        font-size: 50px;
+        margin-top: 20px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    @keyframes gradient-shift {
+        0% { stop-color: #ff7e5f; }
+        50% { stop-color: #feb47b; }
+        100% { stop-color: #ff7e5f; }
+    }
+    stop {
+        animation: none; /* Отключаем анимацию для слабых устройств */
+    }
+
+    .img {
+        margin: 0 auto;
+        display: block;
+        max-width: 15px;
+    }
+
+    .img1 {
+        margin: 0 auto;
+        display: block;
+        max-width: 35px;
+    }
+
+    .img2, .img3 {
+        max-width: 20px;
+    }
+
+    .podval {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .order-link {
+        display: inline-block;
+        font-size: clamp(10px, 2.5vw, 14px);
+        padding: 8px 12px;
+        text-align: center;
+        border: 1px solid #007bff;
+        border-radius: 4px;
+    }
+}
+@media (max-width: 414px) {
+    .conteiner {
+        width: 100%;
+        background-image: url('fon1.jpg'); /* Укажите путь к изображению */
+        padding: 15px;
+    }
+    .curved-text {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    @keyframes gradient-shift {
+        0% { stop-color: #ff7e5f; }
+        50% { stop-color: #feb47b; }
+        100% { stop-color: #ff7e5f; }
+    }
+    stop {
+        animation: none; /* Отключаем анимацию для слабых устройств */
+    }
+
+    .img {
+        margin: 0 auto;
+        display: block;
+        max-width: 15px;
+    }
+
+    .img1 {
+        margin: 0 auto;
+        display: block;
+        max-width: 35px;
+    }
+
+    .img2, .img3 {
+        max-width: 20px;
+    }
+
+    .podval {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .order-link {
+        margin-left: 120px;
+        width: 100px;
+        display: inline-block;
+        font-size: clamp(10px, 2.5vw, 14px);
+        padding: 8px 12px;
+        text-align: center;
+        border: 1px solid #007bff;
+        border-radius: 8px;
+    }
+}
